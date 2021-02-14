@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Maps</title>
+    <link type="text/css" rel="stylesheet" href="mody_v4.css"/>
+</head>
+
+<body>
+    <div>
+        <header>
+            <p id="header">
+			mp_mody_v4
+			</p>
+        </header>
+    </div>
+	<div class="content">
+    <div class="map">
+		<button class="maplink" style="background-image: linear-gradient(to left, rgba(25,25,25,1), rgba(0,0,100,1));" onclick="changePage('dark_final.html')">mp_dark_final</button>
+        <button id="mody_v4" class="maplink" onclick="changePage('mody_v4.html')">mp_mody_v4</button>
+        <button class="maplink" style="background-image: linear-gradient(to left, rgba(38,38,38,1), rgba(180,60,0,1));" onclick="changePage('sierra.html')">mp_sierra</button>
+        <button class="maplink" style="background-image: linear-gradient(to left, rgba(25,25,25,1), rgba(0,150,150,1));" onclick="changePage('strobe.html')">mp_strobe</button>
+    </div>
+
+    <div id="map1" class="mapcontent">
+		<div class="yt">
+			<iframe src="https://www.youtube.com/embed/A1XgQ7-Ms-c"></iframe>
+		</div>
+		<p>
+		The fourth episode of HaMoDy’s well-known Mody-series which features three main ways and an open freeroam area at the end room, which is also accessible from spawn with a secret way.
+		</p>
+		<div class="yt">
+			<iframe src="https://www.youtube.com/embed/-sX4PdtNDWw"></iframe>
+		</div>
+		<p>
+		This map was started sometime during 2016-2017 by HaMoDy, but for whatever reason was never finished at the time.
+		A fairly big chunk of the map was done before it was left on ice for over a year, which included most of the easy and intermediate ways.
+		HaMoDy himself had quit mapping, so he sent the project to another mapper named toXijeE, hoping him or someone else would continue the remaining hard way from where he left off.
+		</p>
+		<p>
+		At the time, toXijeE was working on his own maps, and thus was unable to make any real progress.
+		In 2018 I had just finished working on mp_sierra during the summer, and didn’t really feel like starting a brand new project so soon after just having finished a massive map.
+		I was still very much interested in mapping though, and having learned so much from the creation of mp_sierra, 
+		mp_mody_v4 felt like the perfect project to scratch my mapping itch without committing into something too big that would take me years to finish.
+		</p>
+		<p>
+		The work began in the late months of 2018 and the development would take around 4-5 months, resulting in the map being released on the 28th of March in 2019.
+		It’s hard to say how many hours were put into this map collectively, but it wouldn’t be a far-off guess to assume HaMoDy spent at least as much time as I did.
+		</p>
+		<p>
+		Most of those 4-5 months went into finishing the hard way, which ended up being based around the already well crafted easy and intermediate ways.
+		I used the rooms made for those ways as a base and then modified each jump in some way to make the way feel harder and different.
+		I also made heavy changes to easy and intermediate ways, because they had become quite outdated in quality and balance, 
+		when compared to the hard way. A small facelift was necessary, so I ended up spending a fair bit of time in cleaning those ways as well.
+		I also added a few secrets and a freeroam area at the end of the map to just flesh it out a bit more, making it more interesting.
+		</p>
+		<p>
+		In terms of visuals and design, I really wanted to evolve the design of the Mody-series further.
+		I refined a lot of the texture and light work already done by HaMoDy across the entire map to make the overall presentation look cleaner.
+		I added different-colour custom skyboxes for each way that toXijeE had planned to add.
+		I also made custom effects to some areas and started using a lot more prefabs and curve/terrain patches to give a small twist on the “classic” Mody-design to the map.
+		</p>
+		<p>
+		The old Mody maps were very structural, clean, symmetrical and calculated where as with mody_v4, I wanted to introduce a bit more chaos to the design.
+		I modified the current design (which resembled a lot of the mody_v3 design) to have broken down areas as well as rotated and offset platforms.
+		This gave the map a bit more natural feeling, and allowed to me to create some really cool jumps. 
+		</p>
+		<p>
+		The difficulty of the map is fairly hard, being around +15/20. The hard way is long and challenging having some really tough norpgs,
+		but if you just want to get through it, most of the map is very much doable with the right techs and timings.
+		It is a very forgiving map, but the length might make it seem a bit intimidating at first.
+		The easy and intermediate ways are also very challenging when compared to other maps/ways of similar level.
+		Afterwards I felt like those ways ended up being a bit too hard even though both of them were actually made a lot easier from their original variants.
+		</p>
+		<p>
+		While the map is credited to being created by HaMoDy and me, we got a lot of help from other people in the community during the mapping process.
+		Skazy and toXijeE helped with the mapping and skyboxes a lot. $ilver $urfer and NoobAim did some of the early testing and should also be credited.
+		Noob also helped with some scripting challenges at the very end.
+		</p>
+		
+    </div>
+	
+	<div class="dl_buttons">
+		<button class="button1" onclick="window.location = 'mp_sierra.zip'" >DOWNLOAD MAP (v1.1)</button>
+		<p id="log">
+		<b>v1.1</b> - April 19th 2019
+		</p>
+		<ul>
+			<li id="log">Bugfixes</li>
+			<li id="log">Texture tweaks</li>
+			<li id="log">Minor optimization</li>
+		</ul>
+		<p id="log">
+		<b>v1.0</b> - March 29th 2019
+		</p>
+		<ul>
+			<li id="log">Initial release</li>
+		</ul>
+		<button class="button2">DOWNLOAD SOURCE (.zip)</button>
+		<p id="log">
+		March 29th 2020
+		</p>
+	</div>
+	
+	</div>
+
+    <div class="footer">
+        <footer>
+            <p>YouTube Steam</p>
+        </footer>
+    </div>
+
+    <script>
+		function changePage(page) {
+			location.href = page;
+		}
+    </script>
+</body>
+</html>

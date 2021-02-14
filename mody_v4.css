@@ -1,8 +1,8 @@
 :root {
-	--ultra:	rgba(0,180,180,1);
-	--bright: 	rgba(0,130,130,1);
-	--medium: 	rgba(0,80,80,1);
-	--dark: 	rgba(0,30,30,1);
+	--ultra:	rgba(140,0,140,1);
+	--bright: 	rgba(90,0,90,1);
+	--medium: 	rgba(50,0,50,1);
+	--dark: 	rgba(10,0,10,1);
 }
 
 @font-face {
@@ -21,7 +21,7 @@ body {
 }
 
 header {
-	background-image: url("assets/mp_strobe/banner.jpg");
+	background-image: url("assets/mp_mody_v4/banner.jpg");
 	background-repeat: no-repeat;
 	background-attachment: fixed;
 	background-position:center top;
@@ -69,7 +69,7 @@ footer {
   transition: 0.3s;
 }
 
-#strobe {
+#mody_v4 {
 	background-image: linear-gradient(to left, var(--medium), var(--bright));
 }
 
@@ -86,6 +86,7 @@ footer {
 	left: 50%;
 	transform: translate(-50%, -50%);
 }
+
 
 /* Change background color of buttons on hover */
 .map button:hover {
@@ -131,6 +132,10 @@ footer {
 	position: sticky;
 	background-image: linear-gradient(to right, var(--medium), var(--bright));
 	flex: 1;
+}
+
+.dl_buttons p {
+	margin-bottom: -16px;
 }
 
 .button1 {
@@ -193,8 +198,8 @@ footer {
   position: relative;
   width: 100%;
   padding-bottom: 56.25%; 
-  margin-top: 32px;
   height: 0;
+  margin-top: 32px;
 }
 .yt iframe{
   position: absolute;

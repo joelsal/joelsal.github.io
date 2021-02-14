@@ -1,8 +1,6 @@
 :root {
-	--ultra:	rgba(0,180,180,1);
-	--bright: 	rgba(0,130,130,1);
-	--medium: 	rgba(0,80,80,1);
-	--dark: 	rgba(0,30,30,1);
+	--light: #656566;
+	--dark: #262626;
 }
 
 @font-face {
@@ -16,26 +14,18 @@ html {
 }
 
 body {
+	min-height: 100%;
 	font-family:Courier;
 	margin: 0;
 }
 
 header {
-	background-image: url("assets/mp_strobe/banner.jpg");
-	background-repeat: no-repeat;
-	background-attachment: fixed;
-	background-position:center top;
-	background-size: contain;
-	background-color: var(--dark);
 	width: 100%;
-	height: 0;
-	padding-bottom: 15%;
-	
-	position: relative;
+	margin-bottom: -5px;
 }
 
 footer {
-	background-image: linear-gradient(to right, var(--dark), var(--bright));
+	background-color: #777;
   	text-align: center;
   	color: white;
   	width: 100%;
@@ -48,7 +38,7 @@ footer {
 /* Style the tab menu */
 .map {
   float: left;
-  background-image: linear-gradient(to right, var(--dark), var(--medium));
+  background-color: var(--light);
   width: 20%;
   flex: 1;
 }
@@ -69,24 +59,6 @@ footer {
   transition: 0.3s;
 }
 
-#strobe {
-	background-image: linear-gradient(to left, var(--medium), var(--bright));
-}
-
-#header {
-	font-family: ggpp;
-	font-size: 80px;
-	text-shadow: 4px 4px 8px black;
-	margin-top: 0px;
-	margin-bottom: 0px;
-	color: white;
-	
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%, -50%);
-}
-
 /* Change background color of buttons on hover */
 .map button:hover {
   background-color: var(--dark);
@@ -100,21 +72,12 @@ footer {
 /* Style the tab content */
 .mapcontent {
   float: left;
-  padding-left: 32px;
+  padding-left: 128px;
   width: 60%;
   border-left: none;
-  background-color: var(--medium);
+  background-color: var(--dark);
   color: white;
   flex: 3;
-}
-
-.mapcontent p {
-	margin-top: 64px;
-	margin-bottom: 64px;
-	font-size: 20px;
-	font-weight: bold;
-	color: var(--ultra);
-	text-shadow: 2px 2px 4px black;
 }
 
 .maplink {
@@ -129,54 +92,41 @@ footer {
 	width: 20%;
 	text-align: center;
 	position: sticky;
-	background-image: linear-gradient(to right, var(--medium), var(--bright));
+	background-color: var(--dark);
 	flex: 1;
 }
 
 .button1 {
 	display: block;
-	background-image: linear-gradient(to left, var(--medium), var(--bright));
+	background-color: var(--light);
 	color: white;
-	text-shadow: 2px 2px 4px black;
 	padding: 22px 16px;
 	width: 100%;
-	
-	outline-style: ridge;
-	outline-color: var(--ultra);
-	
+	border: none;
+	outline: none;
 	text-align: center;
 	font-weight: bold;
 	font-size: 20px;
 	font-family: Courier;
 	cursor: pointer;
 	transition: 0.3s;
+	margin-bottom: 32px;
 }
 
 .button2 {
 	display: block;
-	background-image: linear-gradient(to left, var(--medium), var(--bright));
+	background-color: var(--light);
 	color: white;
-	text-shadow: 2px 2px 4px black;
 	padding: 22px 16px;
 	width: 100%;
-	
-	outline-style: ridge;
-	outline-color: var(--ultra);
-	
+	border: 5px;
+	outline: none;
 	text-align: center;
 	font-weight: bold;
 	font-size: 20px;
 	font-family: Courier;
 	cursor: pointer;
 	transition: 0.3s;
-	margin-top: 32px;
-}
-
-#log {
-	text-align: left;
-	font-style: italic;
-	color: white;
-	text-shadow: 1px 1px 2px black;
 }
 
 .image1 {
@@ -193,7 +143,6 @@ footer {
   position: relative;
   width: 100%;
   padding-bottom: 56.25%; 
-  margin-top: 32px;
   height: 0;
 }
 .yt iframe{
