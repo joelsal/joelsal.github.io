@@ -1,13 +1,17 @@
 :root {
-	--ultra:	rgba(0,180,180,1);
-	--bright: 	rgba(0,130,130,1);
-	--medium: 	rgba(0,80,80,1);
-	--dark: 	rgba(0,30,30,1);
+	--ultra:	rgba(0,150,180,1);
+	--bright: 	rgba(0,110,130,1);
+	--medium: 	rgba(0,65,80,1);
+	--dark: 	rgba(0,20,30,1);
 }
 
 @font-face {
   font-family: ggpp;
   src: url(assets/GoGoPosterPunchItalic.ttf);
+}
+
+* {
+	box-sizing: border-box
 }
 
 html {
@@ -16,7 +20,8 @@ html {
 }
 
 body {
-	font-family:Courier;
+	font-family: Audiowide;
+	letter-spacing: 1px;
 	margin: 0;
 }
 
@@ -30,7 +35,6 @@ header {
 	width: 100%;
 	height: 0;
 	padding-bottom: 15%;
-	
 	position: relative;
 }
 
@@ -42,8 +46,6 @@ footer {
 	padding-top: 12px;
 	display: inline-block;
 }
-
-* {box-sizing: border-box}
 
 /* Style the tab menu */
 .map {
@@ -71,16 +73,17 @@ footer {
 
 #strobe {
 	background-image: linear-gradient(to left, var(--medium), var(--bright));
+	border-left: ridge;
+	border-color: var(--ultra);
+	border-width: 5px;
 }
 
 #header {
 	font-family: ggpp;
-	font-size: 80px;
+	font-size: 5vw;
 	text-shadow: 4px 4px 8px black;
 	margin-top: 0px;
-	margin-bottom: 0px;
 	color: white;
-	
 	position: absolute;
 	top: 50%;
 	left: 50%;
@@ -89,12 +92,9 @@ footer {
 
 /* Change background color of buttons on hover */
 .map button:hover {
-  background-color: var(--dark);
-}
-
-/* Create an active/current "tab button" class */
-.map button.active {
-  background-color: var(--dark);
+	border-left: ridge;
+	border-color: var(--ultra);
+	border-width: 5px;
 }
 
 /* Style the tab content */
@@ -112,7 +112,6 @@ footer {
 	margin-top: 64px;
 	margin-bottom: 64px;
 	font-size: 20px;
-	font-weight: bold;
 	color: var(--ultra);
 	text-shadow: 2px 2px 4px black;
 }
@@ -133,6 +132,28 @@ footer {
 	flex: 1;
 }
 
+.credits {
+	display: block;
+	background-image: linear-gradient(to left, var(--medium), var(--bright));
+	color: white;
+	text-shadow: 2px 2px 4px black;
+	padding: 16px;
+	width: 100%;
+	
+	border-style: ridge;
+	border-color: var(--ultra);
+	border-width: 5px;
+	
+	text-align: center;
+	font-weight: bold;
+	font-size: 20px;
+}
+
+.credits li {
+	text-shadow: 2px 2px 4px black;
+	font-weight: normal;
+}
+
 .button1 {
 	display: block;
 	background-image: linear-gradient(to left, var(--medium), var(--bright));
@@ -145,9 +166,8 @@ footer {
 	outline-color: var(--ultra);
 	
 	text-align: center;
-	font-weight: bold;
-	font-size: 20px;
-	font-family: Courier;
+	font-family: ggpp;
+	font-size: 25px;
 	cursor: pointer;
 	transition: 0.3s;
 }
@@ -164,46 +184,44 @@ footer {
 	outline-color: var(--ultra);
 	
 	text-align: center;
-	font-weight: bold;
-	font-size: 20px;
-	font-family: Courier;
+	font-family: ggpp;
+	font-size: 25px;
 	cursor: pointer;
 	transition: 0.3s;
 	margin-top: 32px;
 }
 
-#log {
+.log {
 	text-align: left;
 	font-style: italic;
-	color: white;
+	color: #fff;
 	text-shadow: 1px 1px 2px black;
 }
 
-.image1 {
+.image {
 	width: 100%;
-	padding-bottom: 12px;
-}
-
-.image2 {
-	max-width: 100%;
-	max-height: 100%;
+	border-style: ridge;
+	border-color: var(--ultra);
+	border-width: 5px;
 }
 
 .yt{
-  position: relative;
-  width: 100%;
-  padding-bottom: 56.25%; 
-  margin-top: 32px;
-  height: 0;
-}
+	position: relative;
+	width: 100%;
+	padding-bottom: 56.25%;
+	margin-top: 32px;
+	height: 0;
+}  
+
 .yt iframe{
-  position: absolute;
-  top:0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  padding-bottom: 12px;
-  border: none;
+	position: absolute;
+	top:0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	border-style: ridge;
+	border-color: var(--ultra);
+	border-width: 5px;
 }
 
 .content {
